@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      background-image: url('./images/weather.avif');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+   .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1{
+        text-align: center;
+    }
+
+    input[type="text"] {
+      width: 50%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+    }
+
+    button[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+
+   .weather-report {
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+   .weather-report h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>search</h1>
+    <form>
+      <input type="text" id="city" placeholder="Enter city name">
+      <button type="submit" id="next">Get Weather</button>
+    </form>
+    <div class="weather-report">
+        <p>weather report</p>
+        <h2 id="cityoutput"></h2>
+        <p id="Temperature"></p>
+        <p id="Description"></p>      
+      <!-- Weather report will be displayed here -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

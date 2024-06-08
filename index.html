@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF_8">
+        <title>Weather Forecasting</title>
+        <style>
+            body {
+                background-image: url(./images/background-image.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .navbar {
+                width: 100%;
+                background-color:none;
+                overflow: auto;
+            }
+            .navbar a {
+                float: left;
+                padding: 12px;
+                color: white;
+                text-decoration: none;
+                font-size: 17px;
+                width: 23%; 
+                text-align: center;
+            }
+            .navbar a:hover {
+                background-color: #0829e8;
+            }
+            @media screen and (max-width: 500px) {
+                .navbar a {
+                    float: none;
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+        </style>
+    </head>
+</html>
+<body>
+    <div class="navbar">
+            <a>Home</a>
+            <a href="weather.html">Weather</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">Contact</a>
+    </div>
+</body>
